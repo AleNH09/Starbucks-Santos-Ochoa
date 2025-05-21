@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--brown);
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logos img {
+  width: 300px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.btn-volver {
+  background-color: var(--green_s);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: var(--green_h);
+}
+

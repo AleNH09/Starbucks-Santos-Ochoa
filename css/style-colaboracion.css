@@ -1,0 +1,944 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: var(--font_body);
+  color: var(--brown)
+}
+
+/* -------------------------- HEADER --------------------------*/
+
+.header {
+  background-color: var(--bg);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 625px; 
+  padding: 2rem 1.5rem 0rem 2rem;
+}
+
+/* -------------------------- MENU DESPLEGABLE --------------------------*/
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--brown);
+
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  transition: right 0.4s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.close-icon {
+  color: var(--brown);
+  font-size: 3.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-left: 60px;
+  margin-top: -5px;
+}
+
+.menu-content {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.menu-content ul {
+  list-style: none;
+  text-align: left;
+}
+
+.menu-content ul li {
+  font-family: var(--font_tittle);
+  margin: 2rem 0;
+}
+
+.menu-content ul li a {
+  opacity: 1;
+  text-decoration: none;
+  padding-left: 50px;
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--brown);
+  transition: color 0.3s ease;
+}
+
+.menu-content ul li a:hover {
+  color: var(--red_hover);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logos img {
+  height: 34px;
+  margin-left: 4rem;
+}
+
+
+/* -------------------------- IMG CABECERA --------------------------*/
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.hero-cont {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.hero-cont img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* -------------------------- INFORMACIÓN DE LAS MARCAS --------------------------*/
+#seccion_marcas {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 2rem 4rem;
+  background-color: var(--white);
+  margin-top: 120px; 
+} 
+
+.marca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  }
+
+.marca.contrario {
+    display: flex;
+    flex-direction: row;
+}
+.marca img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+
+  }
+
+.txt {
+  width: 50%;
+}
+
+.txt h2 {
+  font-family: var(--font_tittle);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--brown);
+}
+
+.txt p {
+  font-family: var(--font_body);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--brown);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--font_tittle);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn.green {
+  background-color: var(--green_s);
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.btn.green:hover {
+  background-color: var(--green_hover);
+}
+
+.btn.red {
+  background-color: var(--red_h);
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.btn.red:hover {
+  background-color: var(--red_hover);
+}
+
+/* -------------------------- TEXTO COLAB --------------------------*/
+
+.textocolab {
+  font-family: var(--font_tittle);
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 100px;
+}
+.btn.red2 {
+  background-color: var(--red_h);
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.btn.red2:hover {
+  background-color: var(--red_hover);
+}
+
+/* -------------------------- RESERVAR MESA --------------------------*/
+
+.reserva-container {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Caja semitransparente */
+.overlay-box {
+  background-color: var(--red_h);
+  border-radius: 80px;
+  padding: 40px;
+  width: 1500px;
+  height: 600px;
+  display: flex;
+  gap: 40px;
+}
+
+/* Texto Reserva */
+.texto {
+  flex: 1;
+  color: var(--white);
+  margin-left: 30px;
+}
+
+.texto h1 {
+  font-family: var(--font_tittle);
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+}
+
+.texto p {
+  font-family: var(--font_body);
+  color: var(--white);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-top: 50px;
+
+}
+
+/* -------------------------- FORMULARIO --------------------------*/
+
+.formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+
+}
+
+.formulario input {
+  background-color: var(--white);
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  width: 500px;
+  height: 20px;
+}
+
+.formulario button {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--white);
+  color: var(--red_h);
+  font-weight: bold;
+  font-size: 1rem;
+  height: 50px;
+  width: 340px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: var(--red_hover);
+}
+
+/* -------------------------- POPUP (VENTANA EMERGENTE) --------------------------*/
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+  color: var(--brown);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.popup-content .cerrar {
+  background-color: var(--red_h);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+/* -------------------------- CALENDARIO EVENTOS --------------------------*/
+
+/* Sección general */
+.actividades {
+  background-color: var(--white);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.actividades h2 {
+  font-family: var(--font_tittle);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--brown);
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilo de tarjeta individual */
+.tarjeta {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.tarjeta h3 {
+  font-family: var(--font_tittle);
+  font-size: 1.25rem;
+  margin: 1rem;
+  color: var(--brown);
+/*  text-align:left;*/
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem 1rem;
+  color: var(--brown);
+  flex-grow: 1;
+}
+
+.tarjeta .btn {
+  font-family: var(--font_tittle);
+  background-color: var(--red_h);
+  color: var(--white);
+  text-align: center;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.tarjeta .btn:hover {
+  background-color: var(--red_hover);
+}
+
+/* -------------------------- FOOTER --------------------------*/
+
+footer {
+  background-color: var(--green_h);
+  color: var(--white);
+  padding: 3rem 0rem 5rem 0rem;
+}
+
+.newsletter {
+  font-family: var(--font_tittle);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 300px;
+  margin-right: 0.5rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--white);
+}
+
+.newsletter button {
+  font-family: var(--font_tittle);
+  padding: 0.5rem 1.5rem;
+  background-color: var(--white);
+  color: var(--green_h);
+  border: none;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background-color: var(--green_hover);
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  font-family: var(--font_body);;
+}
+
+
+.footer-info img {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul h4 {
+  font-family: var(--font_body);
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.footer-info li {
+  margin-bottom: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+  opacity: 0.7;
+  color: var(--white);
+  font-size: 14px;
+}
+
+li a:hover {
+  opacity: 0.5;
+
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes a {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.redes a:hover {
+  opacity: 0.5;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.social img {
+  width: 24px;
+  margin-right: 2rem;
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
+
+
+/* -------------------------- POPUP (VENTANA EMERGENTE RESERVA) --------------------------*/
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+  font-family: var(--font_tittle);
+  color: var(--brown);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-family: var(--font_body);
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.popup-content .cerrar {
+  background-color: var(--red_h);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.popup-content .cerrar:hover {
+  opacity: 0.7;
+}
+
+
+/* -------------------------- RESPOSINVE IPAD 12,9 PRO --------------------------*/
+
+@media only screen and (max-width: 1366px) {
+   .header-top {
+    gap: 500px;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+  }
+
+  .logos img {
+    height: 40px;
+    margin-left: -2rem;
+  }
+   .menu-content ul li a {
+    font-size: 4rem;
+    padding-left: 30px;
+  }
+
+  .close-icon {
+    font-size: 3rem;
+  }
+
+  .menu-icon {
+    font-size: 1.8rem;
+  }
+
+/* MARCAS */
+
+  .txt h2 {
+    font-size: 1.5rem;
+  }
+
+  .txt p {
+    font-size: 0.93rem;
+  }
+
+  /* TEXTO COLAB */
+  .textocolab {
+    font-size: 1.8rem;
+    margin-top: -5rem;
+    margin-bottom: 50px;
+  }
+  .btn.red2{
+    margin-bottom: 50px;
+  }
+
+/* RESERVAR MESA */
+  .overlay-box {
+/*    height: 50%;*/
+    width: 90%;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 60px;
+  }
+
+  .texto h1 {
+    font-size: 3rem;
+  }
+
+  .texto p {
+    font-size: 1rem;
+  }
+  .formulario{
+    flex: 1;
+
+  }
+
+  .formulario input {
+    height: 10px;
+
+  }
+  
+  .formulario button {
+    width: 340px;
+    height: 50px;
+
+  }
+
+  /* CALENDARIO EVENTOS */
+  .actividades h2 {
+    font-size: 2rem;
+   
+  }
+
+  .tarjeta h3 {
+    font-size: 1rem;
+  }
+
+  .tarjeta p {
+    font-size: 0.9rem;
+  }
+/* FOOTER */
+
+  .newsletter input {
+    width: 250px;
+  }
+
+  .footer-info img {
+    width: 220px;
+  }
+
+  ul h4 {
+    font-size: 14px;
+  }
+
+  li a {
+    font-size: 12px;
+  }
+
+  .social img {
+    width: 20px;
+    margin-right: 1.5rem;
+  }
+  .popup-content {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .popup-content h2 {
+    font-size: 20px;
+  }
+
+  .popup-content p {
+    font-size: 0.95rem;
+  }
+
+  .popup-content .cerrar {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+}
+
+/* -------------------------- RESPONSIVE IPHONE 14 PRO --------------------------*/
+@media only screen and (max-width: 390px) {
+
+/* HEADER */
+  .header-top {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logos img {
+    height: 35px;
+    margin-left: 37px;
+  }
+
+  /* MENU DESPLEGABLE */
+  .menu-icon {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+
+  .close-icon {
+    font-size: 2.5rem;
+    margin-left: 60px;
+  }
+
+  .menu-content ul li a {
+    font-size: 1.6rem;
+    padding-left: 20px;
+  }
+ /* HERO */
+  .hero-cont img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* MARCAS */
+  #seccion_marcas {
+    margin-top: -30px;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .marca {
+    flex-direction: column;
+  }
+.marca img {
+  order: 2;
+}
+
+.marca .txt {
+  order: 1;
+}
+  .marca.contrario {
+    display: flex;
+    flex-direction: column;
+}
+
+  .marca img,
+  .txt {
+    width: 100%;
+  }
+
+  .txt h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .txt p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .btn.green{
+    margin-left: 120px;
+  }
+  .btn.red {
+        margin-left: 120px;
+
+  }
+
+  /* TEXTO COLAB */
+  .textocolab {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    margin-top: 20px;
+  }
+  .btn.red2 {
+        margin-left: 10px;
+      }
+
+  /* RESERVAR MESA */
+  .overlay-box {
+    flex-direction: column;
+    height: auto;
+    width: 65%;
+    gap: 1.5rem;
+    border-radius: 40px;
+  }
+  .formulario{
+   gap: 20px;
+  }
+  .texto h1 {
+    font-size: 2rem;
+  }
+
+  .texto p {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+
+  .formulario input{
+    width: 100%;
+    font-size: 1rem;
+    height: auto;
+    padding: 1rem;
+
+  }
+
+  .formulario button {
+    width: 100%;
+    font-size: 1rem;
+    height: auto;
+    padding: 1rem;
+
+  }
+
+  /* CALENDARIO EVENTOS */
+
+  .actividades {
+    margin-bottom: 10px;
+  }
+  .actividades h2 {
+    font-size: 1.8rem;
+  }
+
+  .tarjeta {
+    max-width: 100%;
+  }
+
+  .tarjeta h3 {
+    font-size: 1.1rem;
+  }
+
+  .tarjeta p {
+    font-size: 0.85rem;
+  }
+
+  /* FOOTER */
+  .newsletter {
+    font-size: 1.2rem;
+  }
+  .newsletter input {
+    margin-bottom: 1rem;
+  }
+
+  .newsletter button {
+    width: 50%;
+  }
+
+  .redes_sociales {
+    margin-left: 50px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+
+  }
+
+  .footer-info img {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  ul h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  li a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .social img {
+    width: 20px;
+    margin-right: 1rem;
+  }
+
+  /* POPUP */
+  .popup-content {
+    max-width: 75%;
+    padding: 20px;
+  }
+
+  .popup-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .popup-content p {
+    font-size: 0.9rem;
+  }
+
+  .popup-content .cerrar {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+}

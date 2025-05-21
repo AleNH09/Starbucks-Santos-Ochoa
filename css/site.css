@@ -1,0 +1,14 @@
+:root {
+	--bg: #FDFAF2;
+	--white: #FDFAF2;
+	--green_s: #617959;
+	--green_h: #202717;
+	--green_hover: #CAD2C8;
+	--red_s: #E4CBC6;
+	--red_h: #AD6455;
+	--red_hover: #E4CBC6;
+	--brown: #140C07;
+	--font_body: 'FreightText Pro', serif;
+	--font_tittle: 'Helvetica Neue', sans-serif;
+}
+
