@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=”author” content=”Ale_y_Judith”>
+  <meta name=”copyright” content=”propiedades_del_copyright_de_Ale_y_Judith”>
+  <meta name=”revised” content=”05/2025”>
+  <title>Starbucks | Santos Ochoa | Colaboración</title>
+   <link rel="icon" href="media/favicon.png" type="favicon">
+  <link rel="stylesheet" href="css/style-colaboracion.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://use.typekit.net/evv0tmq.css">
+  <link rel="stylesheet" href="https://use.typekit.net/evv0tmq.css">
+</head>
+<body>
+<!--------------------------- ENCABEZADO --------------------------->
+
+  <header class="header">
+  <div class="header-top">
+
+<!--------------------------- MENU DESPLEGABLE --------------------------->
+
+    <div class="menu-icon" id="openMenu">&#9776;</div>
+    <div class="side-menu" id="sideMenu">
+    <div class="close-icon" id="closeMenu">&times;</div>
+    <nav class="menu-content">
+      <ul>
+        <li><a href="colaboracion.html">COLABORACIÓN</a></li>
+        <li><a href="carta.html">CARTA</a></li>
+        <li><a href="error.html" target="_blank">ENCUENTRANOS</a></li>
+        <li><a href="error.html" target="_blank">INICIAR SESIÓN/UNIRTE</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<!--------------------------- LOGOS --------------------------->
+
+    <div class="logos">
+     <a href="index.html"><img src="media/logo.png" alt="logo Starbucks y Santos Ochoa"></a>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-cont">
+      <img src="media/cabecera_colab.jpg" alt="Cafetería">
+    </div>
+  </div>
+</header>
+
+
+<!--------------------------- SECCIÓN INFO COLABO --------------------------->
+
+  <section class="marcas" id="seccion_marcas">
+    <!-- tarjeta starbucks -->
+    <div class="marca">
+      <img src="media/starbucks.jpg" alt="Interior Starbucks">
+      <div class="txt">
+        <h2>Starbucks</h2>
+        <p>Starbucks es una cadena de cafeterías estadounidense fundada en Seattle,
+        Washington, en 1971.En sus inicios, su esencia era crear espacios acogedores donde la 
+        gente pudiera relajarse, leer un buen libro y disfrutar del café. Hoy en día, esa esencia se ha ido perdiendo a medida que la
+        marca ha crecido de manera exponencial, convirtiéndose en una de las cadenas de café más grandes
+        y reconocidas del mundo.</p>
+        <a href="https://www.starbucks.es" target="_blank" class="btn green">Ir a la web</a>
+      </div>
+    </div>
+    <!-- tarjeta santos ochoa -->
+    <div class="marca contrario">
+      <div class="txt">
+        <h2>Santos Ochoa</h2>
+        <p>La librería Santos Ochoa es una reconocida cadena española con más de 20 tiendas repartidas por
+        varias ciudades. Nació en Logroño hace más de 100 años y desde entonces es un punto de encuentro
+        para los amantes de los libros. No solo venden una amplia variedad de libros y material de
+        papelería, sino que también organizan un montón de actividades como clubes de lectura, charlas,
+        talleres y presentaciones de libros. Este lugar mezcla tradición con un toque moderno, y es un
+        lugar ideal para todo aquel lector, estudiante o cualquiera que quiera desconectar.</p>
+        <a href="https://www.santosochoa.es" target="_blank" class="btn red">Ir a la web</a>
+      </div>
+      <img src="media/Santosochoa.jpg" alt="Interior librería">
+    </div>
+  </section>
+<!-- texto conjunto colaboracion -->
+  <section class="textocolab">
+    <p>Un espacio acogedor para leer, relajarte y disfrutar de experiencias únicas. Desde clubes de lectura hasta eventos literarios, cada visita se convierte en un momento especial. Descubre promociones exclusivas que combinan lo mejor de ambos mundos y sumérgete en un ambiente diseñado para inspirar.</p>
+    <a href="carta.html" class="btn red2">Ir a la carta</a>
+  </section>
+
+<!--------------------------- RESERVA --------------------------->
+  <div class="reserva-container">
+  <div class="overlay-box">
+    <div class="texto">
+      <h1>Reserva tu mesa</h1>
+      <p>¿Quieres disfrutar de tu café Starbucks® con tranquilidad?<br>
+        Reserva tu mesa y olvídate de las prisas. Solo tienes que <br>
+        completar el formulario y asegurarte tu espacio para leer, trabajar <br>
+        o simplemente tomarte un descanso.</p>
+    </div>
+    <div class="formulario">
+    <form class="formulario" onsubmit="mostrarPopupReserva(event)">
+      <input type="text" placeholder="Nombre" required>
+      <input type="text" placeholder="Apellido" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="email" placeholder="Email" required>
+      <input type="datetime-local" placeholder="Fecha y hora" required>
+      <button type="submit">Reservar</button>
+    </form></div>
+  </div>
+</div>
+               <!-- ventana emergente reservar mesa -->
+  <div id="popup-reserva" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+    <h2>¡Reserva confirmada!</h2>
+    <p>Tu mesa en nuestra cafetería ya está asegurada. Te esperamos para disfrutar de un buen café y un gran momento.</p>
+    <button class="cerrar" onclick="cerrarPopupReserva()">Cerrar</button>
+  </div>
+</div>
+
+<!--------------------------- ACTIVIDADES/CALENDARIO --------------------------->
+  <section class="actividades">
+  <h2>Actividades del mes</h2>
+  <div class="tarjetas">
+    <!-- Tarjeta 1 -->
+    <div class="tarjeta">
+      <img src="media/la asistenta.jpg" alt="Club de lectura">
+      <h3>Club de Lectura: La asistenta de Freida McFadden</h3>
+      <p><strong>19 de mayo de 2025, 19:00h:</strong></p><p>Únete a nuestro club mensual donde compartimos nuestras lecturas favoritas acompañados de un buen café.</p>
+      <a href="error.html" target="_blank" class="btn">Ver más</a>
+    </div>
+    
+    <!-- Tarjeta 2 -->
+    <div class="tarjeta">
+      <img src="media/tallerdeescritura.jpg" alt="Taller de escritura">
+      <h3>Taller de escritura: Nivel básico</h3>
+      <p><strong>23 de mayo de 2025, 19:00h:</strong></p>
+      <p>Explora tu lado más creativo en este taller dirigido a todos los niveles. ¡Inspírate entre libros y café!</p>
+      <a href="error.html" target="_blank" class="btn">Ver más</a>
+    </div>
+    
+    <!-- Tarjeta 3 -->
+    <div class="tarjeta">
+      <img src="media/cuentacuentos.jpg" alt="Cuentacuentos">
+      <h3>Cuentacuentos para peques</h3>
+      <p><strong>31 de mayo de 2025, 18:00h:</strong></p>
+      <p>Los más pequeños podrán disfrutar de historias mágicas cada sábado por la mañana en nuestra cafetería.</p>
+      <a href="error.html" target="_blank" class="btn">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<!--------------------------- FOOTER --------------------------->
+  <footer>
+    <div class="newsletter">
+      <h2>Newsletter</h2>
+      <input type="email" id="email" placeholder="Escribe tu email">
+      <button onclick="mostrarPopup()">Enviar</button>
+    </div>
+    <div id="popup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+      <h2>¡Suscripción confirmada!</h2>
+      <p>
+        Gracias por unirte a nuestra comunidad.
+      </p>
+      <p>
+        A partir de ahora, recibirás en tu correo las últimas novedades, ofertas exclusivas y eventos especiales de Starbucks y Santos Ochoa.
+      </p>
+      <p>
+        Nos vemos pronto con más café y grandes historias.
+        Pronto recibirás nuestras novedades, ofertas y eventos.
+      </p>
+      <button class="cerrar" onclick="cerrarPopup()">Cerrar</button>
+    </div>
+  </div>
+    <div class="footer-info">
+      <div class="redes_sociales">
+        <a href="index.html"><img src="media/logo_blanco.png" alt="logo starbucks y santos ochoa blanco"></a>
+        <p class="redes"><a href="error.html" target="_blank">#StarbucksSantosOchoa</a></p>
+        <p class="social">
+          <a href="https://www.instagram.com/starbucks/" target="_blank"><img src="media/instagram.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/starbucks/" target="_blank"><img src="media/tiktok.png" alt="Tiktok"></a>
+          <a href="https://www.twitter.com/starbucks/" target="_blank"><img src="media/twitter.png" alt="Twitter"></a>
+          <a href="https://www.facebook.com/starbucks/" target="_blank"><img src="media/facebook.png" alt="Facebook"></a>
+        </p>
+      </div>
+      <div>
+      <ul>
+        <h4>Sobre Nosotros</h4>
+        <li><a href="error.html" target="_blank">Acerca de Starbucks</a></li>
+        <li><a href="error.html" target="_blank">Atención al Cliente</a></li>
+        <li><a href="error.html" target="_blank">Preguntas Frecuentes</a></li>
+        <li><a href="error.html" target="_blank">Contacto</a></li>
+      </ul>
+      </div>
+      <div>
+
+      <ul>
+        <h4>Información Nutricional y Alérgenos</h4>
+        <li><a href="error.html" target="_blank">Información Nutricional</a></li>
+        <li><a href="error.html" target="_blank">Alérgenos</a></li>
+      </ul>
+      </div>
+
+      <div>
+      <ul>
+        <h4>Trabaja con nosotros</h4>
+        <li><a href="error.html" target="_blank">Starbucks Partners</a></li>
+      </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="error.html" target="_blank">Política de Privacidad</a></li>
+          <li><a href="error.html" target="_blank">Aviso Legal y Condiciones de Compra</a></li>
+          <li><a href="error.html" target="_blank">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="js/menudesplegable.js"></script>
+  <script type="text/javascript" src="js/ventana_newsletter.js"></script>
+  <script type="text/javascript" src="js/ventana_reserva.js"></script>
+</body>
+</html>
